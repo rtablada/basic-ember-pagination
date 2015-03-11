@@ -1,0 +1,7 @@
+{{#liquid-with model as posts class="post-list"}}
+    {{#each post in posts}}
+        <li>{{post.title}}</li>
+    {{/each}}
+{{/liquid-with}}
+
+<button {{action 'togglePage'}}>Toggle Page</button>
